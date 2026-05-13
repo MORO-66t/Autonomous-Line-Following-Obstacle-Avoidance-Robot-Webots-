@@ -40,7 +40,7 @@ def run_robot():
     LINE_THRESHOLD = 600
 
     # obstacle detection tuned
-    OBSTACLE_THRESHOLD = 80
+    OBSTACLE_THRESHOLD = 100
     SIDE_THRESHOLD = 200
 
     # =========================
@@ -184,13 +184,14 @@ def run_robot():
                 if any_on_black:
                                 # entering line vertically / not aligned yet
                     if (
+                        counter > 3 and
                         gs_vals[1] < 500 and
                         abs(gs_vals[0] - gs_vals[2]) < 120
                     ):
                         line_reacquire_slow = 40
                                     # line just found again
                     if counter > 0:
-                        line_reacquire_slow = 25
+                        line_reacquire_slow = 40
                 
                     counter = 0
                 
@@ -231,7 +232,7 @@ def run_robot():
                 # slow temporarily after finding line again
                 if line_reacquire_slow > 0:
                 
-                    current_speed = 0.6
+                    current_speed = 0.10
                     line_reacquire_slow -= 1
                 
                 l_speed = current_speed - correction
@@ -293,11 +294,11 @@ def run_robot():
                 )
 
                 if wall_here:
-                    l_speed, r_speed = 3.5, 3.5
+                    l_speed, r_speed = 3.00, 3.5
                     wall_lost = 0
 
                 else:
-                    l_speed, r_speed = 3.5, 3.5
+                    l_speed, r_speed = 3.00, 3.5
                     wall_lost += 1
 
             counter += 1
