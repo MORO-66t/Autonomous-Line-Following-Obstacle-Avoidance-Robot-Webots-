@@ -9,8 +9,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.44076219329264693 -0.439539710910945 -0.7826452143188368 4.467028714201158
-  position -0.007626603573901547 -2.9615729095999126 3.922353625473639
+  orientation -0.5214361384212705 0.5934672118414197 0.6131076757124193 1.9230992144801498
+  position -0.1558168722280491 -0.7324714326409074 3.588368455701154
 }
 TexturedBackground {
 }
@@ -23,7 +23,7 @@ Solid {
       appearance PBRAppearance {
         baseColorMap ImageTexture {
           url [
-            "track.png"
+            "Track6.png"
           ]
           repeatS FALSE
           repeatT FALSE
@@ -43,19 +43,31 @@ Solid {
   }
 }
 SolidBox {
-  translation 0.59 0.5 0.02
+  translation 0.61 0.5 0.02
   size 0.05 0.05 0.05
 }
 SolidBox {
-  translation 0.15 -0.21 0.02
+  translation 0.15 -0.89 0.02
   size 0.05 0.05 0.05
 }
 SolidBox {
-  translation -0.55 -0.1 0.02
+  translation -0.53 0.41 0.02
   size 0.05 0.05 0.05
 }
 SolidBox {
-  translation -0.24 0.06 0.02
+  translation -0.85 0.06 0.02
+  size 0.05 0.05 0.05
+}
+SolidBox {
+  translation -0.1 -0.23 0.02
+  size 0.05 0.05 0.05
+}
+SolidBox {
+  translation -0.66 0.72 0.02
+  size 0.05 0.05 0.05
+}
+SolidBox {
+  translation -0.26 0.06 0.02
   size 0.05 0.05 0.05
 }
 SolidBox {
@@ -63,32 +75,32 @@ SolidBox {
   size 0.05 0.05 0.05
 }
 SolidBox {
-  translation 0 0.66 0.02
+  translation 0.19 0.68 0.02
   name "box(2)"
   size 0.05 0.05 0.05
 }
 SolidBox {
-  translation 0.38 0.16 0.02
+  translation 0.35 0.16 0.02
   size 0.05 0.05 0.05
 }
 SolidBox {
-  translation 0.66 -0.43 0.02
+  translation 0.64 -0.43 0.02
   name "box(1)"
   size 0.05 0.05 0.05
 }
 E-puck {
-  hidden position_0_0 43539.02906019299
-  hidden position_0_1 48550.748703201105
-  hidden linearVelocity_0 0.055594337966107125 -0.012359442376874205 6.539372586688299e-07
-  hidden angularVelocity_0 -0.0005044093604663144 -0.002285168775251792 0.24649551553425408
-  hidden rotation_1 0 -1 0 3.445118561546031
-  hidden linearVelocity_1 0.049326034465527094 -0.010966036583282697 -6.823390854912422e-08
-  hidden angularVelocity_1 0.5414259631487177 2.43828402991831 0.2507065941836126
-  hidden rotation_2 0 -1 0 5.7073506827393485
-  hidden linearVelocity_2 0.0618410463499272 -0.013747411626564371 -2.533884302777346e-08
-  hidden angularVelocity_2 0.6940562651655912 3.121442351818249 0.25265077754879534
-  translation 0.4559470872623751 0.5694414133193446 -6.66304296574969e-05
-  rotation 0.0019343524978013655 0.003958398442305622 -0.9999902946339961 0.21402709738365042
+  hidden position_0_0 59861.24312701076
+  hidden position_0_1 64720.064650675115
+  hidden linearVelocity_0 -0.05880560044851218 -0.027541031201008245 -1.3611763114563408e-09
+  hidden angularVelocity_0 -0.0019461269249528325 0.004178517491761106 0.17559828628617197
+  hidden rotation_1 0 -1 0 4.946479796337261
+  hidden linearVelocity_1 -0.05464993703149501 -0.025594874423739377 -1.9555266738402414e-09
+  hidden angularVelocity_1 1.270702839105306 -2.7125114709759295 0.17983570487504502
+  hidden rotation_2 0 0.9999999999999999 0 3.255986725373823
+  hidden linearVelocity_2 -0.0629198669411819 -0.029468202188758955 1.5691562271771659e-09
+  hidden angularVelocity_2 1.48235232208744 -3.1655065621113065 0.18089764923717766
+  translation 0.017264866871766375 -0.8077278914181585 -6.553707060149606e-05
+  rotation -0.0002362177507189593 0.00011337769184253909 0.999999965673336 -2.7001617754859653
   controller "my_controller"
   groundSensorsSlot [
     E-puckGroundSensors {
